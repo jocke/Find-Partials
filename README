@@ -1,0 +1,26 @@
+A very simple script that scans through one rails view file looking for 'render partials' and
+recursively prints out how they are related.
+
+Usage:
+  ./find_partials.rb app/views/<controller>/<action>.rhtml
+
+Limitations
+  - Only does extensions "rhtml" and "html.erb"
+  - Is not clever enough to figure out partials with "/" in the file names (shared partials)
+  - Probably won't work under Windows.
+
+Suggested improvements:
+  - Make it work with "/" in the file names
+  - More extensions
+  - Better OO (PartialFile object?)
+  - Better output, graphical output.
+  - Smarter error handling.
+  - Detection of recursive partials
+  - Complete redesign; Scan all partials and map their relationships. Would be good for systems with a lot of shared partials.
+
+License: DWYWWIBDBM
+  Do what you want with it but don't blame me.
+
+Author: Jocke Selin <jocke@selincite.com>
+Version: 0.1
+Date: 2010-01-22
